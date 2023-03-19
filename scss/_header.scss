@@ -1,0 +1,122 @@
+.header {
+   
+    &__menu {
+        height: 80px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 0 45px 0;
+        }
+}
+.menu {
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 30px;
+        width: 69.78%;
+    }
+
+    &__links {
+        color: #1d1f2e;
+        font-size: 12px;
+        line-height: 1.5;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:after{
+            content: '';
+            display: block;
+            width: 0%;
+            height: 1px;
+            background-color: #1d1f2e;
+            margin-top: 5px;
+            transition: 0.7s;
+        }
+
+        &:hover{
+            &:after{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.basket {
+    display: flex;
+    gap: 8px;
+    &__cart {
+        background: url('../img/header/icon.svg') left 0 no-repeat;
+        display: inline-block;
+        line-height: 20px;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+
+        span{
+            margin: 0px 0px 0px 26px;
+            color: #1d1f2e;
+            font-size: 12px;
+            line-height: 1.5;
+            text-transform: uppercase;
+        }
+    }
+
+    &__number {
+        background: #1D1F2E;
+        color: white;
+        width: 20px;
+        height: 18px;
+        border-radius: 48%;
+        font-size: 11px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.content-header {
+    background-color: #050827;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+
+    .header__container{
+         background: url('../img/header/bg.png') top center no-repeat ;
+         padding: 159px 73.5px;
+         display: flex;
+         flex-direction: column;
+         gap: 38px;
+         align-items: center;
+         justify-content: center;
+         max-height: 520px;
+
+         .content-header__textblock{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+    
+            .content-header__subttitle {
+                font-size: 18px;
+                line-height: 1.5;
+            }
+        
+            .content-header__title {
+                font-size: 47px;
+                line-height: 1.27;
+            }
+        
+            .content-header__text {
+                font-size: 17px;
+                line-height: 1.76;
+            }
+        }
+    }
+
+    &__button {
+        width: 231px;
+        height: 33px;
+    }
+}

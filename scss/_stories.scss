@@ -1,0 +1,36 @@
+.stories {
+    padding: 0px 0px 140px 0px;
+
+    &__elements {
+        display: flex;
+        gap: 20px;
+        padding: 0px 0px 48px 0px;
+    }
+}
+
+.element-stories {
+    color: #1D1F2E;
+
+    img{
+        margin-bottom: 25.19px;
+    }
+
+    &__title {
+        font-size: 20px;
+        line-height: 1.6;
+        margin-bottom: 14px;
+    }
+
+    &__text {
+        line-height: 1.75;
+        font-size: 16px;
+        opacity: 70%;
+        margin-bottom: 16px;
+    }
+
+    &__date {
+        font-size: 12px;
+        line-height: 1.5;
+        text-transform: uppercase;
+    }
+}
