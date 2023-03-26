@@ -4,8 +4,13 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  outline: none;
+}
+
+body {
   font-family: "Karla";
   font-weight: 400;
+  outline: none;
 }
 
 ul, li {
